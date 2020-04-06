@@ -62,6 +62,8 @@ if __name__ == '__main__':
     # Exercise: Make a figure with a different plot type than the one shown here
     # Eg. make a venn diagram, or a pie chart etc.
 
+
+
     ###### Different plot types have different plotting attributes #####
 
     # Line plot

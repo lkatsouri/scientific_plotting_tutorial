@@ -99,3 +99,15 @@ if __name__ == '__main__':
     # See: https://matplotlib.org/3.1.1/gallery/showcase/anatomy.html
 
     # Exercise: Set major and minor grid lines to the above plots
+
+    plt.plot(x, y, color='red', alpha=0.5, linewidth=2)
+    plt.xlabel('Year', size=10, color='blue')
+    plt.ylabel('Margarine consumed (pounds)', size=10, color='red')
+    plt.title('Per capita consumption of margarine in Maine', size=15)
+    # plt.xticks(ticks=x[::2], labels=year[::2])
+    plt.xlim([0, 6])
+    plt.gca().spines['top'].set_visible(False)
+    plt.gca().spines['right'].set_visible(False)
+    plt.tick_params(axis='both', which='both', direction='out', length=2, pad=1, labelsize='small', colors='k')
+    plt.minorticks_on()
+    plt.show()
